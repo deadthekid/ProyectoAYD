@@ -42,13 +42,20 @@ public class VehiculosxConcesionaria implements Serializable{
 	
 	public VehiculosxConcesionaria() {}
 	
-	public VehiculosxConcesionaria(int id_vehiculo, int id_concesionario, LocalDate fechacompra) {
+
+	
+	public VehiculosxConcesionaria(int id_vehiculo, int id_concesionario, LocalDate fechacompra, Vehiculos vehiculos,
+			Concesionarios concesionarios) {
 		super();
 		this.id_vehiculo = id_vehiculo;
 		this.id_concesionario = id_concesionario;
 		this.fechacompra = fechacompra;
+		this.vehiculos = vehiculos;
+		this.concesionarios = concesionarios;
 	}
-	
+
+
+
 	public int getId_vehiculo() {
 		return id_vehiculo;
 	}

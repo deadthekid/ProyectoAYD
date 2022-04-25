@@ -12,19 +12,19 @@ public class ServiceVehiculo {
 	@Autowired
 	RepositoryVehiculo repositoryVehiculo;
 	
-	public void crearCompania(Vehiculos vehiculo) {
+	public void crearVehiculo(Vehiculos vehiculo) {
 		this.repositoryVehiculo.save(vehiculo);
 	}
 	
-	public List<Vehiculos> obtenerTodasCompanias(){
+	public List<Vehiculos> obtenerTodosVehiculos(){
 		return this.repositoryVehiculo.findAll();
 	}
 	
-	public Vehiculos buscarCompania(int id_vehiculo) {
+	public Vehiculos buscarVehiculo(int id_vehiculo) {
 		return this.repositoryVehiculo.findById(id_vehiculo);
 	}
 	
-	public void eliminarCompania(int id_vehiculo) {
+	public void eliminarVehiculo(int id_vehiculo) {
 		this.repositoryVehiculo.deleteById(id_vehiculo);
 	}
 }

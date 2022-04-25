@@ -32,13 +32,20 @@ public class Modelos {
 	public Modelos() {}
 	
 	
-	public Modelos(int id_modelo, String nombre, String carroceria) {
+	
+	
+	public Modelos(int id_modelo, String nombre, String carroceria, Marca marca, Piezas piezas) {
 		super();
 		this.id_modelo = id_modelo;
 		this.nombre = nombre;
 		this.carroceria = carroceria;
+		this.marca = marca;
+		this.piezas = piezas;
 	}
-	
+
+
+
+
 	public int getId_modelo() {
 		return id_modelo;
 	}
@@ -56,6 +63,36 @@ public class Modelos {
 	}
 	public void setCarroceria(String carroceria) {
 		this.carroceria = carroceria;
+	}
+
+
+
+
+	public Marca getMarca() {
+		return marca;
+	}
+
+
+
+
+	public void setMarca(Marca marca) {
+		this.marca = marca;
+	}
+
+
+
+
+	public Piezas getPiezas() {
+		return piezas;
+	}
+
+
+
+
+	public void setPiezas(Piezas piezas) {
+		this.piezas = piezas;
 	}	
+	
+	
 	
 }

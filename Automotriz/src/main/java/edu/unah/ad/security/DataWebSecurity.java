@@ -32,12 +32,13 @@ public class DataWebSecurity extends WebSecurityConfigurerAdapter{
 	http.authorizeRequests()
 	// Los recursos estáticos no requieren autenticación
 	.antMatchers("/images/**").permitAll()
+	.antMatchers("/css/**").permitAll()
 	// Las vistas públicas no requieren autenticación
 	.antMatchers("/encriptar/**").permitAll()
 	// Asignar permisos a URLs por ROLES
-	.antMatchers("/Estudiantes/**").hasAnyAuthority("alumno")
-	.antMatchers("/estudianteEspecifico/**").hasAnyAuthority("alumno")
-	.antMatchers("/listado**").hasAnyAuthority("instructor")
+	.antMatchers("/Estudiantes/**").hasAnyAuthority("administrador")
+	.antMatchers("/estudianteEspecifico/**").hasAnyAuthority("administrador")
+	.antMatchers("/listado**").hasAnyAuthority("administrador")
 	// Todas las demás URLs de la Aplicación requieren autenticación
 	.anyRequest().authenticated()
 	// El formulario de Login no requiere autenticacion

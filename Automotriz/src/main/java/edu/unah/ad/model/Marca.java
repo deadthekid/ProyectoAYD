@@ -25,13 +25,19 @@ public class Marca {
 	
 	public Marca() {}
 	
-	public Marca(int id_marca, String nombre) {
+	
+	
+	
+	public Marca(int id_marca, String nombre, Compania compania) {
 		super();
 		this.id_marca = id_marca;
 		this.nombre = nombre;
+		this.compania = compania;
 	}
-	
-	
+
+
+
+
 	public int getId_marca() {
 		return id_marca;
 	}
@@ -45,6 +51,13 @@ public class Marca {
 		this.nombre = nombre;
 	}
 
+	public Compania getCompania() {
+		return compania;
+	}
+	public void setCompania(Compania compania) {
+		this.compania = compania;
+	}
+	
 }
 	
 	

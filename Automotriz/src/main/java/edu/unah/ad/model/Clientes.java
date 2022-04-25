@@ -16,11 +16,15 @@ public class Clientes {
 	private String direccion;
 	private String correo;
 	private String telefono;
+	private String sexo;
+	private int ingresos_anuales;
 	
 	public Clientes() {}
 	
+	
+	
 	public Clientes(int id_cliente, String p_nombre, String s_nombre, String p_apellido, String s_apellido,
-			String direccion, String correo, String telefono) {
+			String direccion, String correo, String telefono, String sexo, int ingresos_anuales) {
 		super();
 		this.id_cliente = id_cliente;
 		this.p_nombre = p_nombre;
@@ -30,8 +34,12 @@ public class Clientes {
 		this.direccion = direccion;
 		this.correo = correo;
 		this.telefono = telefono;
+		this.sexo = sexo;
+		this.ingresos_anuales = ingresos_anuales;
 	}
-	
+
+
+
 	public int getId_cliente() {
 		return id_cliente;
 	}
@@ -79,6 +87,22 @@ public class Clientes {
 	}
 	public void setTelefono(String telefono) {
 		this.telefono = telefono;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public int getIngresos_anuales() {
+		return ingresos_anuales;
+	}
+
+	public void setIngresos_anuales(int ingresos_anuales) {
+		this.ingresos_anuales = ingresos_anuales;
 	}
 	
 	

@@ -23,12 +23,17 @@ public class Piezas {
 	
 	public Piezas() {}
 	
-	public Piezas(int id_pieza, String nombre) {
+	
+	
+	public Piezas(int id_pieza, String nombre, Proveedores proveedores) {
 		super();
 		this.id_pieza = id_pieza;
 		this.nombre = nombre;
+		this.proveedores = proveedores;
 	}
-	
+
+
+
 	public int getId_pieza() {
 		return id_pieza;
 	}
@@ -41,5 +46,19 @@ public class Piezas {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+
+
+	public Proveedores getProveedores() {
+		return proveedores;
+	}
+
+
+
+	public void setProveedores(Proveedores proveedores) {
+		this.proveedores = proveedores;
+	}
+	
+	
 	
 }

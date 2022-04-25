@@ -53,13 +53,25 @@ public class ClientesxConcesionaria implements Serializable {
 	
 	
 	
-	public ClientesxConcesionaria(int id_cliente, int id_concesionario, int id_vehiculo, LocalDate fechacompra) {
+	
+
+
+
+	public ClientesxConcesionaria(int id_cliente, int id_concesionario, int id_vehiculo, LocalDate fechacompra,
+			Clientes clientes, Concesionarios concesionarios, Vehiculos vehiculo) {
 		super();
 		this.id_cliente = id_cliente;
 		this.id_concesionario = id_concesionario;
 		this.id_vehiculo = id_vehiculo;
 		this.fechacompra = fechacompra;
+		this.clientes = clientes;
+		this.concesionarios = concesionarios;
+		this.vehiculo = vehiculo;
 	}
+
+
+
+
 
 
 

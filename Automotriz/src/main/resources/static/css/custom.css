@@ -1,0 +1,31 @@
+body {
+   background-image:url("../images/background.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: rigth bottom;
+   min-height: 60vh;
+   position: relative;
+   text-shadow: 2px 2px 2px rgba = #9b9b9b;
+}
+
+table{
+	text-align: center;
+	width:400px;
+	
+}
+
+.table-responsive{
+	height:50vh;
+	margin-left:20%;
+	margin-right:20%;
+	margin-top: 2%;
+}
+.card-header{
+	background: #222222;
+	color:#f4f4f4;
+}
+
+.card{
+	background: #222222;
+	color:#f4f4f4;
+}

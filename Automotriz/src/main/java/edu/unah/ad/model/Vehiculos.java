@@ -32,14 +32,22 @@ public class Vehiculos {
 	
 	
 	
-	public Vehiculos(int id_vehiculo, String vin, String transmision, Modelos modelos, Colores colores) {
+	
+
+
+
+	public Vehiculos(int id_vehiculo, String vin, String transmision, Colores colores, Modelos modelos) {
 		super();
 		this.id_vehiculo = id_vehiculo;
 		this.vin = vin;
 		this.transmision = transmision;
-		this.modelos = modelos;
 		this.colores = colores;
+		this.modelos = modelos;
 	}
+
+
+
+
 
 
 
